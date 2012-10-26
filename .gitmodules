@@ -1,0 +1,6 @@
+[submodule "test/js/mocha"]
+	path = test/js/mocha
+	url = git://github.com/visionmedia/mocha.git
+[submodule "test/js/requirejs"]
+	path = test/js/requirejs
+	url = git://github.com/jrburke/requirejs.git

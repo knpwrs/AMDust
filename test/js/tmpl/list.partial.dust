@@ -1,0 +1,5 @@
+<ul>
+{#fruits}
+<li>{name}</li>
+{/fruits}
+</ul>
