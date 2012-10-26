@@ -1,9 +1,10 @@
+
 /*
  * Contains Dust Core 0.3.0 Copyright (c) 2010 Aleksander Williams
  * AMDust Copyright (c) 2012 Kenneth Powers
  * Version 0.0.0
  */
-define(function () {
+define('dust',[],function () {
 	var dust = {};
 
 	dust.cache = {};
