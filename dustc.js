@@ -1,7 +1,7 @@
 /*
  * Contains part of Dust Full 0.3.0 Copyright (c) 2010 Aleksander Williams
  * AMDust Copyright (c) 2012 Kenneth Powers
- * Version 0.0.0
+ * Version 0.1.0
  */
 define(['./dust'], function (dust) {
 	dust.compile = function(source, name) {
@@ -2713,10 +2713,10 @@ define(['./dust'], function (dust) {
 				return load(parsed.name);
 			}
 			(function (done) {
-				if (typeof process !== undefined && process.title === 'node') {
+				if (typeof process !== 'undefined' && process.title === 'node') {
 					var fileName = require.nodeRequire('path').join(config.baseUrl, parsed.file);
 					done(require.nodeRequire('fs').readFileSync(fileName, 'utf8'));
-				} else if (typeof XMLHttpRequest !== undefined) {
+				} else if (typeof XMLHttpRequest !== 'undefined') {
 					var xhr = new XMLHttpRequest();
 					xhr.open('GET', req.toUrl(parsed.file), true); // req.toUrl, test optimizer
 					xhr.onreadystatechange = function () {
